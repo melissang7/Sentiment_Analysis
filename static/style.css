@@ -1,0 +1,83 @@
+/* static/style.css */
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    background-color: #ECF0F1;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: solid 2px #9DE0AD ;
+}
+
+header {
+    background-color: #9DE0AD;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    color: #594f4f;
+    border: solid 2px #9DE0AD ;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: #594f4f;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: calc(100% - 20px); /* Adiciona espaço para o padding */
+    height: 120px;
+    padding: 10px;
+    border: 2px solid #594f4f; /* Aumenta a espessura da borda e altera a cor */
+    border-radius: 8px; /* Aumenta o raio da borda para suavizar */
+    resize: vertical;
+    margin-bottom: 10px; /* Aumenta o espaço abaixo do textarea */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    line-height: 1.5;
+}
+
+
+
+button {
+    background-color: #9DE0AD;
+    color: #594f4f;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Adiciona estilos ao diário de emoções */
+.diario {
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.diario p {
+    color: #594f4f;
+}

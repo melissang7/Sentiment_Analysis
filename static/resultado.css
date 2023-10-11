@@ -1,0 +1,46 @@
+/* resultado.css */
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    background-color: #ECF0F1;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #594f4f;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    color: #594f4f;
+    margin-bottom: 10px;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9DE0AD;
+    color: #594f4f;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+

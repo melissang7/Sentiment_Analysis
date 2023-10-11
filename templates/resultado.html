@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da Classificação de Emoção</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='resultado.css') }}">
+    <!-- Adicione outros estilos ou bibliotecas conforme necessário -->
+</head>
+<body>
+    <div class="container">
+        <h1>Resultado dos Sentimentos do Paciente</h1>
+        <p>Texto inserido: {{ texto }}</p>
+        <p>Emoção prevista: {{ emocao }}</p>
+        <h2>Probabilidades das Emoções:</h2>
+        <ul>
+            <li>Alegria: {{ resultados['Alegria'] | round(2) }}%</li>
+            <li>Raiva: {{ resultados['Raiva'] | round(2) }}%</li>
+            <li>Tristeza: {{ resultados['Tristeza'] | round(2) }}%</li>
+            <li>Medo: {{ resultados['Medo'] | round(2) }}%</li>
+            <li>Surpresa: {{ resultados['Surpresa'] | round(2) }}%</li>
+            <li>Desgosto: {{ resultados['Desgosto'] | round(2) }}%</li>
+        </ul>
+        <a href="/" class="button">Voltar</a>
+
+    </div>
+</body>
+</html>

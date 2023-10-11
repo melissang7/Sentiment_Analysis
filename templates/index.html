@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diário de Emoções</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Diário de Emoções</h1>
+            <p>Registre suas emoções diárias</p>
+        </header>
+        <main>
+            <form action="/prever" method="POST">
+                <label for="texto">Como você está se sentindo hoje?</label>
+                <textarea id="texto" name="texto" placeholder="Descreva suas emoções..." required></textarea>
+            <div class="diario">
+                <p>Aqui você pode registrar suas emoções. Sinta-se à vontade para escrever o que está sentindo hoje.</p>
+            </div>
+                <button type="submit">Registrar Emoção</button>
+            </form>
+
+        </main>
+    </div>
+</body>
+</html>
